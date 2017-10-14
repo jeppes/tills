@@ -1,0 +1,13 @@
+# Calculate the difference of two arbitrarily large integers.
+# Input: a sequence of pairs of space-separated integers
+# Output: the difference of each pair
+a := 1
+while a = 1
+  try
+    x := read_int
+    y := read_int
+    if x <= y
+      then print y - x
+      else print x - y
+  catch
+    a := 2

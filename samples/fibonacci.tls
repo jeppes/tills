@@ -1,0 +1,25 @@
+# Generate many large fibonnaci numbers and check that they are correct
+# Input: a file which follows the format:
+# n fib(n) n fib(n) etc.
+# End with -1
+
+n := read_int
+(while !(n = -1)
+  k := n
+  i := 0
+  j := 1
+  (while 2 <= k
+    k := k - 1
+    next := i + j
+    i := j
+    j := next
+  )
+  actual := read_int
+  print 'fib(' + n + ') = ' + j
+  print 'actual = ' + actual
+  n := read_int
+)
+print "Done"
+# if i != read_int
+#   then print 'fib(' + n + ')' + ' should be ' + actual + ' but was ' + i
+#   else skip

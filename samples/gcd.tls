@@ -1,0 +1,9 @@
+# Compytes the grextest common divisor of two nymyers.
+x := read_int
+y := read_int
+(while !(x = y)
+  if x <= y
+  then y := y - x
+  else x := x - y
+)
+print x

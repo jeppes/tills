@@ -1,0 +1,8 @@
+# Should not work
+# this is a comment
+a := 5; # comment
+a := 5; # comment
+a := 5; # comment
+a := 5  # comment
+# another comment
+;while true do blue;

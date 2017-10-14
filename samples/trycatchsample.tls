@@ -1,0 +1,5 @@
+# Sample program from lab instructions
+# Should terminate with x = -7
+
+x := 7; try x := x - 7; x := 7 / x; x := x + 7 catch x := x - 7
+

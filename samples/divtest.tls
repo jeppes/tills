@@ -1,0 +1,24 @@
+# Test of some nested try-catches
+# Should print:
+# 16
+# 26
+
+try (
+  x := 0
+  y := 20
+  while !(y <= 0) (
+    try (
+        x := y / x
+    )
+    catch (
+        x := 16
+        y := -123
+    )
+  )
+  x := x / (123 + y)
+)
+catch (
+  y := 26
+)
+print x
+print y

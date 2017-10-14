@@ -1,0 +1,8 @@
+# Computes prime factorization of 1689581.
+# Should terminate with p = 179, q = 9439.
+
+pq := 1689581;
+p := 2;
+(while !(p * (pq / p) = pq) do
+    p := p + 1);
+q := pq / p

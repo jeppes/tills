@@ -1,0 +1,18 @@
+# TODO fix errors
+# Should print 'x = 5'
+x := 1
+try (
+  x := 12
+  try (
+    x := 2 + 9 / 0 + 8
+    try x := 3
+    catch x := 4
+  ) catch (
+    try x := 5
+    catch x := 6
+  )
+) catch (
+  x := 22
+)
+print "x = " + x
+

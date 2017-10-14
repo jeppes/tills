@@ -1,0 +1,10 @@
+# Computes hours minutes and seconds given a number of seconds.
+# Should terminate with hours = 6384, mins = 33, secs = 35
+
+secs := 22984415;
+
+hours := secs / (60 * 60);
+secs := secs - 60 * 60 * hours;
+
+mins := secs / 60;
+secs := secs - 60 * mins

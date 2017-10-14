@@ -1,0 +1,17 @@
+# should return x = 3
+x := 1;
+try
+  x := 12;
+  try
+    try
+        x := 3
+    catch
+        x := 4
+  catch
+    try
+        x := 5
+    catch
+        x := 6
+catch
+  x:= 22
+

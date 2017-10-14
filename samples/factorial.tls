@@ -1,0 +1,16 @@
+# Input: n
+# Output: n!
+break := 1
+(while break = 1
+  try (
+    n := read_int
+    fac := 1
+    (while 2 <= n
+        fac := fac * n
+        n := n - 1
+    )
+    print fac
+  ) catch (
+    break := 0
+  )
+)
