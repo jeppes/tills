@@ -1,7 +1,0 @@
-# should terminate with x = 5
-# this is a comment
-a := 5; # comment
-a := 5; # comment
-a := 5; # comment
-a := 5  # comment
-# another comment

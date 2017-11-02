@@ -19,7 +19,4 @@ n := read_int
   print 'actual = ' + actual
   n := read_int
 )
-print "Done"
-# if i != read_int
-#   then print 'fib(' + n + ')' + ' should be ' + actual + ' but was ' + i
-#   else skip
+print "Done!"
