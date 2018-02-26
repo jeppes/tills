@@ -1,4 +1,4 @@
-# Compytes the grextest common divisor of two numbers
+# Computes the greatest common divisor of two numbers
 x := read_int
 y := read_int
 (while !(x = y)
